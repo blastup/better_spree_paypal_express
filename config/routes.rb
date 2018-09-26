@@ -15,4 +15,16 @@ Spree::Core::Engine.add_routes do
       end
     end
   end
+
+  namespace :api, :defaults => { :format => 'json' } do
+    namespace :v1 do
+      resource :orders do
+        resource :checkouts do
+          member do
+            get :paypal_response
+          end
+        end
+      end
+    end
+  end
 end

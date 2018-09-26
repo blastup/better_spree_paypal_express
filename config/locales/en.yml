@@ -19,3 +19,5 @@ en:
         cancel: "Don't want to use PayPal? No problems."
         connection_failed: "Could not connect to PayPal."
         generic_error: "PayPal failed. %{reasons}"
+  paypal_payment_failed: "Payment transaction failed. Please try again."
+  paypal_canceled: "Did you cancel your payment?"
