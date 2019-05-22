@@ -166,10 +166,6 @@ Spree::CheckoutController.class_eval do
     }
   end
 
-  def completion_route(order)
-    order_path(order)
-  end
-
   def address_required?
     payment_method.preferred_solution.eql?('Sole')
   end
